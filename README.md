@@ -10,5 +10,4 @@ See https://github.com/jpmens/mqttwarn for details how to do that.
 
 ### Run the container
 Run mqttwarn with link to mosquitto container (if mqttwarn.ini resists in current directory):  
-`(reverse-i-search)`run ': docker run -d --name mqttwarn -v $PWD:/opt/mqttwarn/conf --link mosquitto:mosquitto pfichtner/mqttwarn`
-
+`docker run -d --name mqttwarn -v $PWD:/opt/mqttwarn/conf --link mosquitto:mosquitto pfichtner/mqttwarn`
